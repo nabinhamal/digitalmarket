@@ -1,6 +1,11 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { ArrowDownToLine,
+
+import {
+  Button,
+  buttonVariants,
+} from '@/components/ui/button'
+import {
+  ArrowDownToLine,
   CheckCircle,
   Leaf,
 } from 'lucide-react'
@@ -40,7 +45,7 @@ export default function Home() {
             .
           </h1>
           <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
-            Welcome to DigitalMarket. Every asset on our
+            Welcome to DigitalHippo. Every asset on our
             platform is verified by our team to ensure our
             highest quality standards.
           </p>
@@ -56,7 +61,7 @@ export default function Home() {
           </div>
         </div>
 
-       
+      
       </MaxWidthWrapper>
 
       <section className='border-t border-gray-200 bg-gray-50'>
