@@ -10,7 +10,7 @@ import Image from "next/image"
 
 
 const Cart = () =>{
-    const itemCount = 1 
+    const itemCount = 0 
     const fee = 1
     return (<Sheet>
         <SheetTrigger className="group -m-2 fex items-center p-2">
@@ -20,7 +20,7 @@ const Cart = () =>{
             </span>
             </SheetTrigger>
             <SheetContent className="flex w-full flex-col sm:max-w-lg">
-                <SheetHeader className="space-y-2.5 pr-6">
+                <SheetHeader className="space-y-2.5 pr-6 items-center ">
                     <SheetTitle>Cart (0)</SheetTitle>
                 </SheetHeader>
                 {itemCount > 0 ?  (
@@ -47,7 +47,7 @@ const Cart = () =>{
                        </div>
                        <SheetFooter>
                         <SheetTrigger asChild>
-                        <Link href='/cart' className={buttonVariants({className: 'w-full,'})}>Continue to checkout</Link>
+                        <Link href='/cart' className={buttonVariants({className: 'w-full',})}>Continue to Checkout</Link>
                         </SheetTrigger>
                        </SheetFooter>
                     </div>
@@ -57,6 +57,10 @@ const Cart = () =>{
                         <div className="relative mb-4 h-60 w-60 text-muted-foreground">
                             <Image src='/hippo-empty-cart.png' fill alt="empty shopping cart"/>
                         </div>
+                        <div className="text-xl font-semibold">Your Cart is Empty</div>
+                        <SheetTrigger asChild>
+                            <Link href={buttonVariants({variant:'link',size:'sm',className:'text-sm text-muted-foreground',})}>Add Items to Your Cart to Checkout</Link>
+                        </SheetTrigger>
                     </div>
                 )}
             </SheetContent>
