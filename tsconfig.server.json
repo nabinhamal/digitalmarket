@@ -5,7 +5,6 @@
     "outDir": "dist",
     "noEmit": false,
     "jsx": "react"
-    // Remove the 'bundler' option if it's present in your file
   },
   "include": ["src/server.ts", "src/payload.config.ts"]
 }
