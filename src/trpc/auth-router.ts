@@ -52,7 +52,6 @@ export const authRouter = router({
 
       return { success: true }
     }),
-<<<<<<< HEAD
 
     signIn: publicProcedure
     .input(AuthCredentialsValidator)
@@ -77,6 +76,4 @@ export const authRouter = router({
         throw new TRPCError({ code: 'UNAUTHORIZED' })
       }
     }),
-=======
->>>>>>> 1a2cc6e8cecd88ca38fc22eba7b23d15fe4c329a
 })
