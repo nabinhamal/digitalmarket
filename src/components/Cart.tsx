@@ -55,7 +55,7 @@ const Cart = () =>{
                 ) : (
                     <div className="flex h-full flex-col items-center justify-center space-y-1">
                         <div className="relative mb-4 h-60 w-60 text-muted-foreground">
-                            <Image src='/hippo-empty-cart.png' fill alt="empty shopping cart"/>
+                            <Image src='/hippo-empty-cart.png' sizes="100vw" fill alt="empty shopping cart"/>
                         </div>
                         <div className="text-xl font-semibold">Your Cart is Empty</div>
                         <SheetTrigger asChild>

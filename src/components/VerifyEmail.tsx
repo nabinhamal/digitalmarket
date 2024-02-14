@@ -39,6 +39,7 @@ const VerifyEmail = ({ token }: VerifyEmailProps) => {
             src='/hippo-email-sent.png'
             fill
             alt='the email was sent'
+            sizes="100vw"
           />
         </div>
 
