@@ -1,6 +1,5 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import ProductReel from '@/components/ProductReel'
-
 import {
   Button,
   buttonVariants,
