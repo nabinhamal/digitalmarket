@@ -9,17 +9,17 @@ var richtext_slate_1 = require("@payloadcms/richtext-slate");
 var bundler_webpack_1 = require("@payloadcms/bundler-webpack");
 var path_1 = __importDefault(require("path"));
 var dotenv_1 = __importDefault(require("dotenv"));
-var users_1 = require("./collections/users");
 var Product_1 = require("./collections/Products/Product");
 var Media_1 = require("./collections/Media");
 var ProductFile_1 = require("./collections/ProductFile");
-var Order_1 = require("./collections/Order");
+var Orders_1 = require("./collections/Orders");
+var Users_1 = require("./collections/Users");
 dotenv_1.default.config({
     path: path_1.default.resolve(__dirname, '../env'),
 });
 exports.default = (0, config_1.buildConfig)({
     serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
-    collections: [users_1.Users, Product_1.Products, Media_1.Media, ProductFile_1.ProductFiles, Order_1.Orders],
+    collections: [Users_1.Users, Product_1.Products, Media_1.Media, ProductFile_1.ProductFiles, Orders_1.Orders],
     routes: {
         admin: '/sell'
     },
