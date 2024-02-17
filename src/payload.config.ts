@@ -10,7 +10,9 @@ import { Products } from "./collections/Products/Product";
 import { Media } from './collections/Media';
 import { ProductFiles } from './collections/ProductFile';
 import { Orders } from "./collections/Orders";
-import { Users } from "./collections/users";
+import { Users } from './collections/Users';
+
+
 
 
 
