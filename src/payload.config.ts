@@ -5,11 +5,12 @@ import { webpackBundler } from "@payloadcms/bundler-webpack";
 import path from "path";
 
 import dotenv from "dotenv"
-import { Users } from "./collections/users";
+
 import { Products } from "./collections/Products/Product";
 import { Media } from './collections/Media';
 import { ProductFiles } from './collections/ProductFile';
-import { Orders } from "./collections/Order";
+import { Orders } from "./collections/Orders";
+import { Users } from "./collections/users";
 
 
 

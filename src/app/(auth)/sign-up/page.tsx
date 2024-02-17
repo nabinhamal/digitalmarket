@@ -62,17 +62,12 @@ const Page = () => {
       },
     })
 
-
-  const OnSubmit =({
+  const onSubmit = ({
     email,
     password,
-  } : TAuthCredentialsValidator) =>{
-//send data to server
-mutate({email,password})
-  
+  }: TAuthCredentialsValidator) => {
+    mutate({ email, password })
   }
-
- 
 
   return (
     <>
@@ -96,7 +91,7 @@ mutate({email,password})
           </div>
 
           <div className='grid gap-6'>
-            <form onSubmit={handleSubmit(OnSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className='grid gap-2'>
                 <div className='grid gap-1 py-2'>
                   <Label htmlFor='email'>Email</Label>
